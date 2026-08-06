@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- ========================= -->
+        <!-- TÍTULO -->
+        <!-- ========================= -->
+
+        <TextView
+            android:id="@+id/txtTituloFragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Perfil"
+            android:textColor="@color/morado_principal"
+            android:textSize="28sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="5dp"
+
+            android:text="Administra tu información personal y tu cuenta."
+            android:textSize="16sp"/>
+
+
+        <!-- ========================= -->
+        <!-- INFORMACIÓN PERSONAL -->
+        <!-- ========================= -->
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardPerfil"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="20dp"
+
+            app:cardCornerRadius="15dp"
+            app:cardElevation="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <!-- FOTO -->
+
+
+                <!-- NOMBRE -->
+
+                <TextView
+                    android:id="@+id/txtNombre"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="15dp"
+
+                    android:text="Nombre del usuario"
+                    android:textColor="@color/morado_principal"
+                    android:textSize="22sp"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <!-- ========================= -->
+        <!-- INFORMACIÓN PERSONAL -->
+        <!-- ========================= -->
+
+        <androidx.cardview.widget.CardView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="15dp"
+
+            app:cardCornerRadius="15dp"
+            app:cardElevation="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Información Personal"
+                    android:textColor="@color/morado_principal"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+
+                <!-- NOMBRE COMPLETO -->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="15dp"
+
+                    android:text="Nombre completo"
+                    android:textStyle="bold"/>
+
+                <EditText
+                    android:id="@+id/edtNombreCompleto"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="5dp"
+
+                    android:enabled="false"
+                    android:hint="Nombre completo"
+                    android:inputType="textPersonName"/>
+
+
+                <!-- CORREO -->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="15dp"
+
+                    android:text="Correo electrónico"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/txtCorreo"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="5dp"
+
+                    android:text="No disponible"
+                    android:textSize="16sp"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <!-- ========================= -->
+        <!-- INFORMACIÓN DE LA CUENTA -->
+        <!-- ========================= -->
+
+        <androidx.cardview.widget.CardView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="15dp"
+
+            app:cardCornerRadius="15dp"
+            app:cardElevation="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Información de la Cuenta"
+                    android:textColor="@color/morado_principal"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="15dp"
+
+                    android:text="ID de usuario"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/txtIdUsuario"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="5dp"
+
+                    android:text="No disponible"
+                    android:textSize="16sp"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <!-- ========================= -->
+        <!-- RESUMEN ENERGÉTICO -->
+        <!-- ========================= -->
+
+        <androidx.cardview.widget.CardView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="15dp"
+
+            app:cardCornerRadius="15dp"
+            app:cardElevation="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Resumen Energético"
+                    android:textColor="@color/morado_principal"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+
+                <!-- ÚLTIMO CONSUMO -->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="15dp"
+
+                    android:text="Último consumo"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/txtConsumoPerfil"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="5dp"
+
+                    android:text="0 kWh"
+                    android:textSize="18sp"/>
+
+
+                <!-- ELECTRODOMÉSTICOS -->
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="15dp"
+
+                    android:text="Electrodomésticos registrados"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/txtElectrodomesticosPerfil"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="5dp"
+
+                    android:text="0"
+                    android:textSize="18sp"/>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imgPerfil"
+
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+
+                    android:src="@drawable/user"
+
+                    app:civ_border_color="@color/morado_principal"
+                    app:civ_border_width="4dp" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <!-- ========================= -->
+        <!-- ACCIONES -->
+        <!-- ========================= -->
+
+        <androidx.cardview.widget.CardView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="20dp"
+
+            app:cardCornerRadius="15dp"
+            app:cardElevation="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Acciones"
+                    android:textColor="@color/morado_principal"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+
+                <!-- EDITAR -->
+
+                <Button
+                    android:id="@+id/btnEditarPerfil"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="15dp"
+
+                    android:backgroundTint="@color/morado_principal"
+
+                    android:text="EDITAR PERFIL"/>
+
+
+                <!-- CAMBIAR FOTO -->
+
+                <Button
+                    android:id="@+id/btnCambiarFoto"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="10dp"
+
+                    android:backgroundTint="@color/verde_lima"
+
+                    android:text="CAMBIAR FOTOGRAFÍA"/>
+
+
+                <!-- GUARDAR -->
+
+                <Button
+                    android:id="@+id/btnGuardarCambios"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="10dp"
+
+                    android:backgroundTint="@color/morado_principal"
+
+                    android:enabled="false"
+
+                    android:text="GUARDAR CAMBIOS"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</ScrollView>

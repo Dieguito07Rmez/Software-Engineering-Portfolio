@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="botones">#6D4AAD</color>
+
+    <color name="morado_principal">#522D6E</color>
+    <color name="verde_lima">#7FBC03</color>
+    <color name="dorado">#F4B334</color>
+
+    <!-- Colores auxiliares -->
+    <color name="blanco">#FFFFFF</color>
+    <color name="gris_oscuro">#22242A</color>
+
+    <!-- Estados -->
+    <color name="consumo_bajo">#7FBC03</color>
+    <color name="consumo_medio">#F4B334</color>
+    <color name="consumo_alto">#D32F2F</color>
+</resources>

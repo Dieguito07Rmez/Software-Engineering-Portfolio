@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- ========================= -->
+        <!-- TÍTULO -->
+        <!-- ========================= -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Recomendaciones"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="@color/morado_principal"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="5dp"
+
+            android:text="Consejos basados en tu consumo de luz registrado."
+            android:textSize="16sp"/>
+
+
+        <!-- ========================= -->
+        <!-- ALERTA DE CONSUMO -->
+        <!-- ========================= -->
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="20dp"
+
+            app:cardCornerRadius="15dp"
+            app:cardElevation="6dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical"
+                android:padding="20dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Alerta de consumo"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="@color/morado_principal"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+
+                    android:layout_marginTop="15dp">
+
+
+                    <ImageView
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+
+                        android:src="@drawable/outline_cast_warning_24"
+                        android:layout_marginEnd="12dp"/>
+
+
+                    <TextView
+                        android:id="@+id/tvAlerta"
+
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+
+                        android:layout_weight="1"
+
+                        android:text="Calculando consumo..."
+                        android:textSize="14sp"/>
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="10dp"
+
+                    android:text="Consumo real"
+                    android:textStyle="bold"/>
+
+
+                <TextView
+                    android:id="@+id/tvConsumoReal"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="0 kWh"
+                    android:textSize="18sp"
+                    android:textColor="@color/verde_lima"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="10dp"
+
+                    android:text="Consumo estimado"
+                    android:textStyle="bold"/>
+
+
+                <TextView
+                    android:id="@+id/tvConsumoEstimado"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="0 kWh"
+                    android:textSize="18sp"
+                    android:textColor="@color/morado_principal"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <!-- ========================= -->
+        <!-- RECOMENDACIONES -->
+        <!-- ========================= -->
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="20dp"
+
+            app:cardCornerRadius="15dp"
+            app:cardElevation="6dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical"
+                android:padding="20dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Por electrodoméstico"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="@color/morado_principal"/>
+
+
+                <!-- TIP 1 -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+
+                    android:layout_marginTop="15dp">
+
+
+                    <ImageView
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+
+                        android:src="@drawable/outline_agriculture_24"
+                        android:layout_marginEnd="12dp"/>
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:id="@+id/tvTituloTip1"
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:text="Refrigerador"
+                            android:textStyle="bold"
+                            android:textSize="14sp"
+                            android:textColor="@color/morado_principal"/>
+
+
+                        <TextView
+                            android:id="@+id/tvTip1"
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:text="Revisa el sello de la puerta y evita abrirlo muy seguido."
+                            android:textSize="13sp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="4dp"
+
+                    android:background="#E0E0E0"/>
+
+
+                <!-- TIP 2 -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+
+                    android:layout_marginTop="8dp">
+
+
+                    <ImageView
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+
+                        android:src="@drawable/outline_air_24"
+                        android:layout_marginEnd="12dp"/>
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:id="@+id/tvTituloTip2"
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:text="Aire acondicionado"
+                            android:textStyle="bold"
+                            android:textSize="14sp"
+                            android:textColor="@color/morado_principal"/>
+
+
+                        <TextView
+                            android:id="@+id/tvTip2"
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:text="Usa una temperatura moderada para reducir el consumo."
+                            android:textSize="13sp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="4dp"
+
+                    android:background="#E0E0E0"/>
+
+
+                <!-- TIP 3 -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+
+                    android:layout_marginTop="8dp">
+
+
+                    <ImageView
+                        android:layout_width="28dp"
+                        android:layout_height="28dp"
+
+                        android:src="@drawable/outline_backlight_low_24"
+                        android:layout_marginEnd="12dp"/>
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:id="@+id/tvTituloTip3"
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:text="Iluminación"
+                            android:textStyle="bold"
+                            android:textSize="14sp"
+                            android:textColor="@color/morado_principal"/>
+
+
+                        <TextView
+                            android:id="@+id/tvTip3"
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:text="Utiliza focos LED y aprovecha la luz natural."
+                            android:textSize="13sp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <!-- ========================= -->
+        <!-- TIPS GENERALES -->
+        <!-- ========================= -->
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+
+            app:cardCornerRadius="15dp"
+            app:cardElevation="6dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical"
+                android:padding="20dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Tips de ahorro general"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="@color/morado_principal"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="10dp"
+
+                    android:text="• Desconecta aparatos que no uses."
+                    android:textSize="14sp"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="8dp"
+
+                    android:text="• Aprovecha la luz natural durante el día."
+                    android:textSize="14sp"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="8dp"
+
+                    android:text="• Lava ropa con agua fría y junta cargas completas."
+                    android:textSize="14sp"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</ScrollView>

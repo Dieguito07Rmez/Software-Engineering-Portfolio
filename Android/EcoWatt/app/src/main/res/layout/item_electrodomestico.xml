@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="12dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+
+        <!-- TIPO -->
+
+        <TextView
+            android:id="@+id/txtTipo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Televisión"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/morado_principal"/>
+
+
+        <!-- MARCA -->
+
+        <TextView
+            android:id="@+id/txtMarca"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="Marca: Samsung"/>
+
+
+        <!-- VOLTAJE -->
+
+        <TextView
+            android:id="@+id/txtVoltaje"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Voltaje: 127 V"/>
+
+
+        <!-- POTENCIA -->
+
+        <TextView
+            android:id="@+id/txtPotencia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Potencia: 150 W"/>
+
+
+        <!-- CANTIDAD -->
+
+        <TextView
+            android:id="@+id/txtCantidad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cantidad: 1"/>
+
+
+        <!-- HORAS -->
+
+        <TextView
+            android:id="@+id/txtHorasUso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Uso diario: 8 horas"/>
+
+
+        <!-- BOTONES -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/btnEditar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="EDITAR"
+                android:textSize="12sp"/>
+
+
+            <Button
+                android:id="@+id/btnEliminar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:text="ELIMINAR"
+                android:textSize="12sp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

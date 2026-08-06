@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical"
+        android:padding="16dp">
+
+
+        <!-- ========================= -->
+        <!-- TÍTULO -->
+        <!-- ========================= -->
+
+        <TextView
+
+            android:id="@+id/txtTituloAnalisis"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Análisis de Consumo"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="@color/morado_principal"/>
+
+
+        <TextView
+
+            android:id="@+id/txtSubtituloAnalisis"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="5dp"
+
+            android:text="Compara tu consumo energético entre periodos."
+            android:textSize="16sp"/>
+
+
+        <!-- ========================= -->
+        <!-- RESUMEN DEL CONSUMO -->
+        <!-- ========================= -->
+
+        <androidx.cardview.widget.CardView
+
+            android:id="@+id/cardResumenConsumo"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="20dp"
+
+            app:cardCornerRadius="15dp"
+            app:cardElevation="6dp">
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical"
+                android:padding="20dp">
+
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Resumen del consumo"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="@color/morado_principal"/>
+
+
+                <!-- CONSUMO ACTUAL -->
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="15dp"
+
+                    android:text="Último consumo"
+                    android:textStyle="bold"/>
+
+
+                <TextView
+
+                    android:id="@+id/txtConsumoActualAnalisis"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="5dp"
+
+                    android:text="0 kWh"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/verde_lima"/>
+
+
+                <TextView
+
+                    android:id="@+id/txtPeriodoActualAnalisis"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="5dp"
+
+                    android:text="Periodo no disponible"
+                    android:textSize="14sp"/>
+
+
+                <!-- CONSUMO ANTERIOR -->
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="15dp"
+
+                    android:text="Consumo anterior"
+                    android:textStyle="bold"/>
+
+
+                <TextView
+
+                    android:id="@+id/txtConsumoAnteriorAnalisis"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="5dp"
+
+                    android:text="0 kWh"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/morado_principal"/>
+
+
+                <TextView
+
+                    android:id="@+id/txtPeriodoAnteriorAnalisis"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="5dp"
+
+                    android:text="Periodo no disponible"
+                    android:textSize="14sp"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <!-- ========================= -->
+        <!-- COMPARACIÓN -->
+        <!-- ========================= -->
+
+        <androidx.cardview.widget.CardView
+
+            android:id="@+id/cardComparacion"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="20dp"
+
+            app:cardCornerRadius="15dp"
+            app:cardElevation="6dp">
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical"
+                android:padding="20dp">
+
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Comparación de consumo"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="@color/morado_principal"/>
+
+
+                <TextView
+
+                    android:id="@+id/txtComparacionConsumo"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="15dp"
+
+                    android:text="Sin información suficiente"
+                    android:textSize="16sp"
+                    android:textStyle="bold"/>
+
+
+                <TextView
+
+                    android:id="@+id/txtPorcentajeCambio"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="8dp"
+
+                    android:text="Cambio porcentual: 0%"
+                    android:textSize="14sp"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <!-- ========================= -->
+        <!-- ESTADO DEL CONSUMO -->
+        <!-- ========================= -->
+
+        <androidx.cardview.widget.CardView
+
+            android:id="@+id/cardEstadoConsumo"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="20dp"
+
+            app:cardCornerRadius="15dp"
+            app:cardElevation="6dp">
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical"
+                android:padding="20dp">
+
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Estado del consumo"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="@color/morado_principal"/>
+
+
+                <TextView
+
+                    android:id="@+id/txtEstadoAnalisis"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="15dp"
+
+                    android:text="Normal"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/verde_lima"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <!-- ========================= -->
+        <!-- INFORMACIÓN DEL PAGO -->
+        <!-- ========================= -->
+
+        <androidx.cardview.widget.CardView
+
+            android:id="@+id/cardInformacionPago"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+
+            app:cardCornerRadius="15dp"
+            app:cardElevation="6dp">
+
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical"
+                android:padding="20dp">
+
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Información del pago"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="@color/morado_principal"/>
+
+
+                <TextView
+
+                    android:id="@+id/txtPagoActualAnalisis"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="15dp"
+
+                    android:text="Último pago: $0.00"
+                    android:textSize="14sp"/>
+
+
+                <TextView
+
+                    android:id="@+id/txtPagoAnteriorAnalisis"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="8dp"
+
+                    android:text="Pago anterior: $0.00"
+                    android:textSize="14sp"/>
+
+
+                <TextView
+
+                    android:id="@+id/txtTarifaAnalisis"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="8dp"
+
+                    android:text="Tarifa: No disponible"
+                    android:textSize="14sp"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+</ScrollView>

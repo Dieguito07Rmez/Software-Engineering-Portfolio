@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 🏠 INICIO -->
+    <item
+        android:id="@+id/nav_inicio"
+        android:icon="@drawable/ic_home"
+        android:title="Inicio" />
+
+    <!-- ⚡ RECIBOS / CONSUMO -->
+    <item
+        android:id="@+id/nav_consumo_luz"
+        android:icon="@drawable/ic_electricidad"
+        android:title="Consumo de Luz" />
+
+    <!-- 🔌 ELECTRODOMÉSTICOS -->
+    <item
+        android:id="@+id/nav_electrodomesticos"
+        android:icon="@drawable/ic_electrodomestico"
+        android:title="Electrodomésticos" />
+
+    <!-- 📊 ANÁLISIS -->
+    <item
+        android:id="@+id/nav_analisis"
+        android:icon="@drawable/ic_grafica"
+        android:title="Análisis de Consumo" />
+
+    <!-- 💡 RECOMENDACIONES -->
+    <item
+        android:id="@+id/nav_recomendaciones"
+        android:icon="@drawable/ic_idea"
+        android:title="Recomendaciones" />
+
+    <!-- 👤 PERFIL -->
+    <item
+        android:id="@+id/nav_perfil"
+        android:icon="@drawable/ic_usuario"
+        android:title="Perfil" />
+
+    <!-- 🚪 CERRAR SESIÓN -->
+    <item
+        android:id="@+id/nav_cerrar_sesion"
+        android:icon="@drawable/ic_cerrar_sesion"
+        android:title="Cerrar sesión" />
+
+</menu>

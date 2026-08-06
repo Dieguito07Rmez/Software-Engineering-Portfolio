@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="120dp"
+    android:viewportWidth="120"
+    android:viewportHeight="120">
+
+    <!-- Cabeza -->
+    <path
+        android:fillColor="#7E57C2"
+        android:pathData="M60,18
+                          A22,22 0,1 0,60,62
+                          A22,22 0,1 0,60,18"/>
+
+    <!-- Cuerpo -->
+    <path
+        android:fillColor="#7E57C2"
+        android:pathData="M20,108
+                          C20,82 37,68 60,68
+                          C83,68 100,82 100,108
+                          Z"/>
+
+</vector>
